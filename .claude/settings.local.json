@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -lh /d/Irfan/hyundai-ahmad-yani-main/hyundai-ahmad-yani-main/*.html)",
+      "WebFetch(domain:www.hyundai.com)"
+    ]
+  }
+}
