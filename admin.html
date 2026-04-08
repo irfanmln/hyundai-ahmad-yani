@@ -675,7 +675,7 @@ async function uploadImage(slug,type){
     const publicUrl=`${SB}/storage/v1/object/public/product-images/${path}`;
     const col='img_'+type;
     // Upsert ke tabel product_images
-    const upsertRes=await fetch(SB+'/rest/v1/product_images',{
+    const upsertRes=await fetch(SB+'/rest/v1/product_images?on_conflict=car_slug',{
       method:'POST',
       headers:{
         'apikey':KEY,'Authorization':'Bearer '+KEY,
