@@ -682,7 +682,7 @@ async function uploadImage(slug,type){
         'Content-Type':'application/json',
         'Prefer':'resolution=merge-duplicates,return=minimal'
       },
-      body:JSON.stringify({product_slug:slug,[col]:publicUrl})
+      body:JSON.stringify({car_slug:slug,[col]:publicUrl})
     });
     if(!upsertRes.ok){
       const errText=await upsertRes.text();
